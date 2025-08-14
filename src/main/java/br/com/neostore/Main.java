@@ -1,42 +1,33 @@
 package br.com.neostore;
 
-import jakarta.persistence.EntityManager;
-import jakarta.persistence.EntityManagerFactory;
-import jakarta.persistence.Persistence;
+import org.eclipse.jetty.server.Server;
+import org.eclipse.jetty.servlet.ServletContextHandler;
+import org.eclipse.jetty.servlet.ServletHolder;
+import org.glassfish.jersey.servlet.ServletContainer;
 
 public class Main {
     public static void main(String[] args) {
 
-        //Ele cria as configuração lendo as configurações do persistence.xml.
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("neostore-pu");
+        Server server = new Server(8080);
 
-        // é o objeto que faz as operações no banco
-        EntityManager em = emf.createEntityManager();
+        ServletContextHandler context = new ServletContextHandler(ServletContextHandler.NO_SESSIONS);
+        context.setContextPath("/");
+        server.setHandler(context);
 
-        System.out.println("Conexão com o banco estabelecida com sucesso!");
+        ServletContainer servletContainer = new ServletContainer(new MyApplication());
+        ServletHolder servletHolder = new ServletHolder(servletContainer);
 
-        Fornecedor novoFornecedor = new Fornecedor(
-                "Espetinho do alemão",
-                "contato@espetinhodoalemao.com",
-                "Fornecedor de espetinhos",
-                "31.391.437/0001-27"
-        );
+        context.addServlet(servletHolder, "/api/*");
 
-        try{
+        System.out.println("Servidor iniciado em http://localhost:8080");
 
-            em.getTransaction().begin();
-            em.persist(novoFornecedor);
-            em.getTransaction().commit();
+        try {
+            server.start();
+            server.join();
 
-            System.out.println("Fornecedor Salvo com sucesso!");
-            System.out.println(novoFornecedor);
-
-        }catch (Exception e){
-            em.getTransaction().rollback();
+        } catch (Exception e) {
+            System.out.println("Erro ao iniciar o servidor: " + e.getMessage());
             e.printStackTrace();
-        } finally {
-            em.close();
-            emf.close();
         }
     }
 }
