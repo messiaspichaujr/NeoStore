@@ -19,10 +19,12 @@ public class Fornecedor {
     @Column(name = "description") // mapeia para description
     private String description;
 
-    @Column(name = "cnpj", nullable = false, unique = true, length = 18) //mapeia para o cnpj e o deixa com tam definido e unico
+    @Column(name = "cnpj", nullable = false, unique = true, length = 18)
+    //mapeia para o cnpj e o deixa com tam definido e unico
     private String cnpj;
 
-    public Fornecedor() {}
+    public Fornecedor() {
+    }
 
     public Fornecedor(String name, String email, String description, String cnpj) {
         this.name = name;
