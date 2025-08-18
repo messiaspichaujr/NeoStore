@@ -29,8 +29,8 @@ Siga os passos abaixo para configurar e executar a aplicação completa.
 * **Pré-requisitos:** Git, JDK 17, Maven, Node.js e XAMPP.
 * **Clone o Repositório:**
     ```bash
-    git clone [https://github.com/messiaspichaujr/seu-repositorio.git](https://github.com/messiaspichaujr/seu-repositorio.git)
-    cd seu-repositorio
+    git clone https://github.com/messiaspichaujr/NeoStore.git
+    cd NeoStore
     ```
 * **Configure o Banco de Dados (XAMPP):**
     1.  Inicie os módulos **Apache** e **MySQL** no XAMPP.
@@ -41,7 +41,7 @@ Siga os passos abaixo para configurar e executar a aplicação completa.
 
 ### **2. Executar o Backend (IntelliJ IDEA)**
 
-1.  Abra o **IntelliJ IDEA** e selecione **File > Open**, abrindo a pasta `backend-neostore`.
+1.  Abra o **IntelliJ IDEA** e selecione **File > Open**, abrindo a pasta `NeoStoreBack`.
 2.  Aguarde o Maven sincronizar as dependências.
 3.  Edite o ficheiro `src/main/resources/META-INF/persistence.xml` e configure o seu utilizador e senha do MySQL (padrão do XAMPP: `user="root"` e `password=""`).
 4.  Encontre a classe `Main.java`, clique com o botão direito e selecione **Run 'Main.main()'**.
@@ -49,7 +49,7 @@ Siga os passos abaixo para configurar e executar a aplicação completa.
 
 ### **3. Executar o Frontend (VS Code)**
 
-1.  Abra o **VS Code** numa nova janela e selecione **File > Open Folder...**, abrindo a pasta `neostore-frontend`.
+1.  Abra o **VS Code** numa nova janela e selecione **File > Open Folder...**, abrindo a pasta `NeoStoreFront`.
 2.  Abra um novo terminal (`Ctrl+'`).
 3.  Instale as dependências:
     ```bash
