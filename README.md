@@ -75,3 +75,5 @@ A API expõe os seguintes endpoints, todos sob a base URL `/api`:
 | `PUT`       | `/fornecedores/{id}`     | Atualiza um fornecedor existente.       |
 | `DELETE`    | `/fornecedores/{id}`     | Deleta um fornecedor.                   |
 | `POST`      | `/fornecedores/importar` | Importa uma lista de fornecedores.      |
+
+<img width="750" height="917" alt="image" src="https://github.com/user-attachments/assets/0e0f79ae-ab70-42a5-b287-4f58e6d9e85c" />
