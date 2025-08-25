@@ -38,14 +38,14 @@ Aplicação web Full-Stack para o gerenciamento de fornecedores, desenvolvida co
    
 - npm install
 - npm run dev
-O Front estará disponível em http://localhost:5173
+*O Front estará disponível em http://localhost:5173
 
 ### 🛠 Tecnologias Utilizadas
-Backend	/ Frontend
-Java 17 / React
-Maven / Vite
-Jetty / Axios
-JAX-RS / Styled-Components
-JPA (Hibernate)
-MySQL	
+*Backend	/ Frontend
+*Java 17 / React
+*Maven / Vite
+*Jetty / Axios
+*JAX-RS / Styled-Components
+*JPA (Hibernate)
+*MySQL	
 	
