@@ -8,13 +8,13 @@ Aplicação web Full-Stack para o gerenciamento de fornecedores, desenvolvida co
 
 ## 🛠️ Tecnologias Utilizadas
 
-| Backend (API RESTful)           | Frontend (SPA)         |
+| Backend                         | Frontend               |
 | ------------------------------- | ---------------------- |
-| Java 17                         | React 18               |
+| Java 17                         | React                  |
 | Maven                           | Vite                   |
-| Jetty (Servidor Embarcado)      | Axios                  |
-| JAX-RS (Jersey)                 | Styled-Components    |
-| JPA (Hibernate)                 | React-iMask            |
+| Jetty                           | Axios                  |
+| JAX-RS                          | Styled-Components      |
+| JPA (Hibernate)                 | React                  |
 | MySQL                           | VS Code                |
 | IntelliJ IDEA                   |                        |
 
@@ -59,7 +59,7 @@ Siga os passos abaixo para configurar e executar a aplicação completa.
     ```bash
     npm run dev
     ```
-5.  A aplicação frontend estará disponível no endereço indicado no terminal (geralmente `http://localhost:5173`).
+5.  A aplicação frontend estará disponível no endereço indicado no terminal (`http://localhost:5173`).
 
 ---
 
