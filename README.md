@@ -2,7 +2,7 @@
 
 ![Status do Projeto](https://img.shields.io/badge/status-concluído-brightgreen)
 
-Aplicação web Full-Stack para o gerenciamento de fornecedores, desenvolvida como um desafio técnico. O backend consiste numa API RESTful em Java (sem Spring Boot) e o frontend numa Single Page Application (SPA) em React.
+Aplicação web Full-Stack para o gerenciamento de fornecedores, desenvolvida como um desafio técnico. O backend consiste numa API RESTful em Java e o frontend em React.
 
 ---
 
