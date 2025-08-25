@@ -1,79 +1,51 @@
-# NeoStore - Desafio Full-Stack (Java + React)
-
-![Status do Projeto](https://img.shields.io/badge/status-concluído-brightgreen)
+# NeoStore
 
 Aplicação web Full-Stack para o gerenciamento de fornecedores, desenvolvida como um desafio técnico. O backend consiste numa API RESTful em Java e o frontend em React.
+---
+
+## 🚀 Como Rodar o Projeto
+
+### 1. Pré-requisitos
+- Git  
+- JDK 17  
+- Maven  
+- XAMPP (MySQL + phpMyAdmin)  
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
-
-| Backend                         | Frontend               |
-| ------------------------------- | ---------------------- |
-| Java 17                         | React                  |
-| Maven                           | Vite                   |
-| Jetty                           | Axios                  |
-| JAX-RS                          | Styled-Components      |
-| JPA (Hibernate)                 | React                  |
-| MySQL                           | VS Code                |
-| IntelliJ IDEA                   |                        |
+### 2. Banco de Dados
+1. Inicie **Apache** e **MySQL** no XAMPP.  
+2. Acesse o [phpMyAdmin](http://localhost/phpmyadmin).  
+3. Vá até **Importar**.  
+4. Selecione o arquivo `database.sql` (raiz do projeto).  
+5. Clique em **Executar** para criar o banco e popular os dados.  
 
 ---
 
-## 🚀 Como Executar o Projeto
-
-Siga os passos abaixo para configurar e executar a aplicação completa.
-
-### **1. Ambiente e Banco de Dados**
-
-* **Pré-requisitos:** Git, JDK 17, Maven, Node.js e XAMPP.
-* **Clone o Repositório:**
-    ```bash
-    git clone https://github.com/messiaspichaujr/NeoStore.git
-    cd NeoStore
-    ```
-* **Configure o Banco de Dados (XAMPP):**
-    1.  Inicie os módulos **Apache** e **MySQL** no XAMPP.
-    2.  Aceda ao phpMyAdmin (`http://localhost/phpmyadmin`).
-    3.  Clique na aba **"Importar"**.
-    4.  Clique em "Escolher ficheiro" e selecione o ficheiro `database.sql` que está na raiz deste projeto.
-    5.  Clique em **"Executar"** para criar o banco e popular os dados.
-
-### **2. Executar o Backend (IntelliJ IDEA)**
-
-1.  Abra o **IntelliJ IDEA** e selecione **File > Open**, abrindo a pasta `NeoStoreBack`.
-2.  Aguarde o Maven sincronizar as dependências.
-3.  Edite o ficheiro `src/main/resources/META-INF/persistence.xml` e configure o seu utilizador e senha do MySQL (padrão do XAMPP: `user="root"` e `password=""`).
-4.  Encontre a classe `Main.java`, clique com o botão direito e selecione **Run 'Main.main()'**.
-5.  O servidor backend estará a rodar em `http://localhost:8080`.
-
-### **3. Executar o Frontend (VS Code)**
-
-1.  Abra o **VS Code** numa nova janela e selecione **File > Open Folder...**, abrindo a pasta `NeoStoreFront`.
-2.  Abra um novo terminal (`Ctrl+'`).
-3.  Instale as dependências:
-    ```bash
-    npm install
-    ```
-4.  Inicie o servidor de desenvolvimento:
-    ```bash
-    npm run dev
-    ```
-5.  A aplicação frontend estará disponível no endereço indicado no terminal (`http://localhost:5173`).
+### 3. Backend (Java)
+1. Abra a pasta `NeoStoreBack` no **IntelliJ IDEA**.  
+2. Aguarde o Maven baixar as dependências.  
+3. Configure usuário e senha do MySQL em src/main/resources/META-INF/persistence.xml
+   (obs: Não configurei Usuário admin no banco, esta o padrão que é user: root e senha vazia "");
+4. Rode a classe `Main.java`.  
+5. O backend estará disponível em: http://localhost:8080
 
 ---
 
-## 📋 Endpoints da API
+### 4. Frontend (React)
+1. Abra a pasta `NeoStoreFront` no **VS Code**.  
+2. No terminal, instale as dependências:  
+```bash
+npm install
+npm run dev
+http://localhost:5173
 
-A API expõe os seguintes endpoints, todos sob a base URL `/api`:
-
-| Método HTTP | URL                      | Descrição                               |
-| :---------- | :----------------------- | :-------------------------------------- |
-| `POST`      | `/fornecedores`          | Cria um novo fornecedor.                |
-| `GET`       | `/fornecedores`          | Retorna a lista paginada de fornecedores. |
-| `GET`       | `/fornecedores/{id}`     | Retorna um fornecedor específico.       |
-| `PUT`       | `/fornecedores/{id}`     | Atualiza um fornecedor existente.       |
-| `DELETE`    | `/fornecedores/{id}`     | Deleta um fornecedor.                   |
-| `POST`      | `/fornecedores/importar` | Importa uma lista de fornecedores.      |
-
-<img width="750" height="917" alt="image" src="https://github.com/user-attachments/assets/0e0f79ae-ab70-42a5-b287-4f58e6d9e85c" />
+🛠 Tecnologias Utilizadas
+Backend	/ Frontend
+Java 17 / React
+Maven / Vite
+Jetty / Axios
+JAX-RS / Styled-Components
+JPA (Hibernate)
+MySQL	
+	
