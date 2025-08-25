@@ -41,11 +41,17 @@ Aplicação web Full-Stack para o gerenciamento de fornecedores, desenvolvida co
 3. O Front estará disponível em http://localhost:5173
 
 ### 🛠 Tecnologias Utilizadas
-*Backend	/ Frontend
-*Java 17 / React
-*Maven / Vite
-*Jetty / Axios
-*JAX-RS / Styled-Components
-*JPA (Hibernate)
-*MySQL	
-	
+
+**Backend**  
+- Java 17  
+- Maven  
+- Jetty  
+- JAX-RS  
+- JPA (Hibernate)  
+- MySQL  
+
+**Frontend**  
+- React  
+- Vite  
+- Axios  
+- Styled-Components  
