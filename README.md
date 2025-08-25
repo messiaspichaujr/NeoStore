@@ -34,13 +34,13 @@ Aplicação web Full-Stack para o gerenciamento de fornecedores, desenvolvida co
 
 ### 4. Frontend (React)
 1. Abra a pasta `NeoStoreFront` no **VS Code**.  
-2. No terminal, instale as dependências:  
-```bash
-npm install
-npm run dev
-http://localhost:5173
+2. No terminal, instale as dependências:
+   
+- npm install
+- npm run dev
+O Front estará disponível em http://localhost:5173
 
-🛠 Tecnologias Utilizadas
+### 🛠 Tecnologias Utilizadas
 Backend	/ Frontend
 Java 17 / React
 Maven / Vite
