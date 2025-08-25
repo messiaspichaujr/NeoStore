@@ -38,7 +38,7 @@ Aplicação web Full-Stack para o gerenciamento de fornecedores, desenvolvida co
    
 - npm install
 - npm run dev
-*O Front estará disponível em http://localhost:5173
+3. O Front estará disponível em http://localhost:5173
 
 ### 🛠 Tecnologias Utilizadas
 *Backend	/ Frontend
