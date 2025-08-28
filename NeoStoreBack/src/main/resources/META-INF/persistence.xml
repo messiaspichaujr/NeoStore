@@ -4,6 +4,7 @@
              version="3.0">
 
     <persistence-unit name="neostore-pu" transaction-type="RESOURCE_LOCAL">
+
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
 
         <properties>
