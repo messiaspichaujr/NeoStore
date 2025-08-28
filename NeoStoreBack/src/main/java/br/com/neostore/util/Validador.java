@@ -1,11 +1,10 @@
-package br.com.neostore;
+package br.com.neostore.util;
 
 // import da biblioteca caelum stella para o cnpj
 
 import br.com.caelum.stella.validation.CNPJValidator;
 
 // import da biblioteca apache commons para o email
-import br.com.caelum.stella.validation.InvalidStateException;
 import org.apache.commons.validator.routines.EmailValidator;
 
 public class Validador {
