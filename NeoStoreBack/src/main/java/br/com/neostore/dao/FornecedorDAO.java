@@ -1,5 +1,6 @@
-package br.com.neostore;
+package br.com.neostore.dao;
 
+import br.com.neostore.entity.Fornecedor;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;

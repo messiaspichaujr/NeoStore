@@ -1,4 +1,8 @@
-package br.com.neostore;
+package br.com.neostore.resource;
+
+import br.com.neostore.dao.FornecedorDAO;
+import br.com.neostore.entity.Fornecedor;
+import br.com.neostore.util.Validador;
 
 import jakarta.inject.Inject;
 import jakarta.ws.rs.*;

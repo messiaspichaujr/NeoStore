@@ -1,4 +1,4 @@
-package br.com.neostore;
+package br.com.neostore.entity;
 
 import jakarta.persistence.*;
 

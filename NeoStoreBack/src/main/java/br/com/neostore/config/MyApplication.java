@@ -1,9 +1,10 @@
-package br.com.neostore;
+package br.com.neostore.config;
 
 import org.glassfish.jersey.server.ResourceConfig;
 
 public class MyApplication extends ResourceConfig {
-    public MyApplication(){
+
+    public MyApplication() {
         packages("br.com.neostore");
         register(new ApplicationBinder());
     }
