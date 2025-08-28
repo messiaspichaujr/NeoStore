@@ -14,7 +14,7 @@ public class Main {
         context.setContextPath("/");
         server.setHandler(context);
 
-        ServletContainer servletContainer = new ServletContainer(new MyApplication());
+        ServletContainer servletContainer = new ServletContainer(new br.com.neostore.MyApplication());
         ServletHolder servletHolder = new ServletHolder(servletContainer);
 
         context.addServlet(servletHolder, "/api/*");
