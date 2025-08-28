@@ -1,4 +1,4 @@
-package br.com.neostore;
+package br.com.neostore.config;
 
 import jakarta.ws.rs.container.ContainerRequestContext;
 import jakarta.ws.rs.container.ContainerResponseContext;
